@@ -1,0 +1,361 @@
+﻿html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://inspiretoglow.com/wp-content/uploads/2024/12/Inspire-to-Glow-December-2024-Desktop-Wallpaper-4-1136x639.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #4a2c57;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.index-page .kelebek-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.index-page .kelebek {
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.8;
+  animation: flyUp 12s infinite ease-in;
+  filter: drop-shadow(0 0 3px #c71585cc);
+}
+
+.k1 { left: 10%; bottom: -50px; animation-delay: 0s; }
+.k2 { left: 30%; bottom: -50px; animation-delay: 3s; }
+.k3 { left: 50%; bottom: -50px; animation-delay: 6s; }
+.k4 { left: 70%; bottom: -50px; animation-delay: 1.5s; }
+.k5 { left: 90%; bottom: -50px; animation-delay: 4.5s; }
+
+@keyframes flyUp {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-300px) scale(1.2) rotate(15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(0.8) rotate(-15deg);
+    opacity: 0;
+  }
+}
+
+.index-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.letter-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(199, 21, 133, 0.25);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  user-select: none;
+}
+
+.letter-box h1 {
+  color: #c71585;
+  margin-bottom: 25px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(199, 21, 133, 0.6);
+}
+
+input[type="text"] {
+  padding: 14px 15px;
+  width: 100%;
+  border: 2.5px solid #c71585;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.3s ease;
+  user-select: text;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #a0136f;
+  box-shadow: 0 0 8px #a0136f88;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background-color: #c71585;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: #a0136f;
+  outline: none;
+}
+
+.mektup-page .kelebek-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.mektup-page .kelebek {
+  position: absolute;
+  font-size: 32px;
+  opacity: 0.9;
+  animation: flutter 6s infinite ease-in-out;
+  filter: drop-shadow(0 0 3px #c71585cc);
+}
+
+.mektup-page .kelebek.k1 {
+  top: 15%;
+  left: 12%;
+  animation-delay: 0s;
+}
+
+.mektup-page .kelebek.k2 {
+  top: 50%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.mektup-page .kelebek.k3 {
+  bottom: 12%;
+  left: 30%;
+  animation-delay: 4s;
+}
+
+.mektup-page .kelebek.k4 {
+  top: 30%;
+  right: 40%;
+  animation-delay: 3s;
+}
+
+.mektup-page .kelebek.k5 {
+  bottom: 20%;
+  right: 25%;
+  animation-delay: 1s;
+}
+
+@keyframes flutter {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.mektup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+
+  perspective: 800px;
+}
+
+.mektup {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 45px 40px 50px 40px;
+  border-radius: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(199, 21, 133, 0.25);
+  text-align: center;
+  position: relative;
+  user-select: text;
+
+  transform-style: preserve-3d;
+  transform-origin: center bottom;
+
+  opacity: 0;
+  transform: rotateX(90deg) translateZ(-100px);
+
+  animation: mektupOpen 0.8s forwards cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 0.3s;
+}
+
+@keyframes mektupOpen {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg) translateZ(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) translateZ(0);
+  }
+}
+
+.mektup:hover {
+  transform: rotateX(5deg) rotateY(-3deg) scale(1.02);
+  box-shadow: 0 25px 60px rgba(199, 21, 133, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mektup h2 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  color: #c71585;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(199, 21, 133, 0.6);
+  position: relative;
+  user-select: text;
+}
+
+.mektup h2::after {
+  content: "❤️";
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 2.4rem;
+  animation: heartbeat 1.5s infinite;
+  vertical-align: middle;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.15); }
+}
+
+.mektup p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: #4a2c57;
+  margin: 25px 0 35px;
+  white-space: pre-line;
+  user-select: text;
+}
+
+.ozel-not {
+  background: #ffe6f0;
+  padding: 20px 25px;
+  border-radius: 18px;
+  font-weight: 600;
+  color: #b0005a;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px rgba(199, 21, 133, 0.15);
+  user-select: text;
+}
+
+.kurdele {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 35px;
+  background: linear-gradient(135deg, #ff69b4, #c71585);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(199, 21, 133, 0.3);
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .mektup {
+    padding: 30px 25px 35px 25px;
+    max-width: 90%;
+  }
+
+  .mektup h2 {
+    font-size: 2.4rem;
+  }
+
+  .mektup p {
+    font-size: 1.1rem;
+  }
+
+  .ozel-not {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+
+  .kurdele {
+    width: 160px;
+    height: 25px;
+    top: -30px;
+  }
+
+  .letter-box {
+    padding: 30px 20px;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mektup h2 {
+    font-size: 1.8rem;
+  }
+
+  .mektup p {
+    font-size: 1rem;
+  }
+
+  .ozel-not {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  .letter-box h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
